@@ -1,0 +1,41 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "redes  logo buscador"
+    ". secciones .";
+}
+.redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+}
+.buscador {
+  grid-area: buscador;
+  display: flex;
+  justify-content: center;
+}
+.secciones {
+  grid-area: secciones;
+  display: flex;
+  justify-content: center;
+}
