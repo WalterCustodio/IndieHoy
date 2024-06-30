@@ -18,6 +18,7 @@ header {
   grid-template-areas:
     "redes  logo buscador"
     ". secciones .";
+  height: 20vh;
 }
 .redes {
   grid-area: redes;
@@ -28,6 +29,7 @@ header {
   grid-area: logo;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .buscador {
   grid-area: buscador;
@@ -36,6 +38,77 @@ header {
 }
 .secciones {
   grid-area: secciones;
+}
+.secciones ul {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
+}
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  height: 235vh;
+  width: 100%;
+}
+#portada {
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 75vh;
+  width: 60%;
+}
+.principales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 65%;
+  width: 100%;
+  gap: 14px;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.noti_principal {
+  display: flex;
+  width: 40%;
+}
+.ultimas_noticias {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+#playlist {
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  height: 45vh;
+  background-color: #577bff;
+}
+#proximos_eventos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+#indie_boom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 45vh;
+  background-color: #1a0457;
 }
