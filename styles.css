@@ -7,32 +7,42 @@ html {
 
 header {
   background-color: #f8f9fa;
-  padding: 20px;
 }
 
 .header-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: 1 fr, 1 fr, 1 fr;
+  grid-template-rows: 1 fr, 1 fr;
   grid-template-areas:
     "redes  logo buscador"
     ". secciones .";
-  height: 20vh;
+  height: 25vh;
+}
+.banner {
+  display: grid;
+  grid-template-columns: 1 fr, 1 fr, 1 fr;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  background: linear-gradient(to right, #1a0457, #6e3890, #577bff);
 }
 .redes {
-  grid-area: redes;
+  grid-row: 1;
+  grid-column: 1;
   display: flex;
   justify-content: center;
 }
 .logo {
-  grid-area: logo;
+  grid-row: 1;
+  grid-column: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .buscador {
-  grid-area: buscador;
+  grid-row: 1;
+  grid-column: 3;
   display: flex;
   justify-content: center;
 }
