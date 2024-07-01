@@ -24,7 +24,9 @@ header {
 }
 
 .logo img {
-  height: 90px; /* Ajusta según sea necesario */
+  position: relative;
+  left: -2.5em;
+  max-height: 85px;
 }
 
 .community-button button {
@@ -73,6 +75,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 
 .main-content {
@@ -87,7 +90,6 @@ main {
 .category {
   display: inline-flex;
   background-color: #ffa500;
-
   padding: 0px;
 }
 .category2 {
@@ -169,7 +171,7 @@ main {
 }
 .title {
   position: relative;
-  top: -2em;
+  top: -2.5em;
   margin-top: 0.2em;
   margin-left: 1em;
   text-align: end;
@@ -220,18 +222,29 @@ main {
 }
 .noticia img {
   height: 70px;
+  width: 70px;
+  object-fit: fill;
 }
 
 .playlist {
-  background: #00bfff;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  background: #577bff;
+  gap: 5em;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 17.4vw;
   margin-top: 40px;
+  height: 40vh;
+  width: 64vw;
 }
 
 .playlist h2 {
   margin-top: 0;
+}
+.titulos_playlist {
+  display: flex;
+  flex-direction: column;
 }
 
 #proximos_eventos {
@@ -240,8 +253,9 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  height: 65vh;
   margin-top: 40px;
 }
 
