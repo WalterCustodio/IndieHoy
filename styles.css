@@ -329,30 +329,43 @@ main {
 }
 
 #indie_boom {
+  padding-left: 20%;
+  padding-right: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 45vh;
+  width: 64vw;
   background-color: #1a0457;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-top: 40px;
 }
 
 #indie_boom h2 {
   margin: 20px 0;
+  
+}
+
+#indie_boom h1 {
+  margin-bottom: 30px;
+  margin: 20px 0;
+  font-size: 60px;  
+  font-style: italic;
+  line-height: 1 ;
 }
 
 #indie_boom .carousel {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
   padding-bottom: 20px;
 }
 
 #indie_boom .item {
+  position: relative;
   min-width: 200px;
-  text-align: center;
+  text-align: left;
+  
 }
 
 #indie_boom .item img {
@@ -361,10 +374,40 @@ main {
   margin-bottom: 10px;
 }
 
-.destacar {
-  color: #ffa500;
-  font-family: "MuseoModerno", sans-serif;
+#indie_boom .item h2, #indie_boom .item h3 {
+  position: absolute;
+  width: 100%;
+  color: white; 
+  margin-left: 10px;
+  
 }
+
+#indie_boom .item h2 {
+  bottom: 40px; 
+  
+}
+
+#indie_boom .item h3 {
+  bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.destacar{
+  color: white;
+  font-family: "MuseoModerno",sans-serif;
+  font-style: normal;
+}
+
 footer {
   background: #333;
   color: white;
