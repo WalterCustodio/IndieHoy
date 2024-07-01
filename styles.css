@@ -283,7 +283,9 @@ main {
   justify-content: center;
   align-items: flex-start;
   background-color: #8c73c3;
-  padding: 0% 2% 2% 2%;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  padding: 0% 2% 0% 2%;
   margin-top: 2%;
 }
 .titulo_eventos {
@@ -291,9 +293,27 @@ main {
   position: relative;
   top: -1.9em;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
+  font-style: italic;
   border: solid 3px #6e3890;
   padding: 0.3em 0.5em;
+}
+.titulo_eventos span {
+  font-weight: 700;
+  font-style: normal;
+}
+#proximos_eventos button {
+  margin: 20px;
+  margin-left: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 20px;
+  border: solid 3px white;
+  border-radius: 5px;
+  color: white;
+  background: none;
+}
+#proximos_eventos h3 {
+  font-family: "Poppins", sans-serif;
 }
 .eventos {
   display: grid;
@@ -314,23 +334,127 @@ main {
 }
 .grupo1 {
   grid-column: 1;
+  position: relative;
+  overflow: hidden;
 }
 .grupo2 {
   grid-column: 2;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .grupo3 {
   grid-column: 3;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+.info1,
+.info3,
+.info5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 20px;
+  margin: 0;
+  height: 40%;
+}
+.info1 h3 {
+  font-size: 3em;
+}
+.info1 h4 {
+  font-size: 2em;
+}
+.info1 h5 {
+  font-size: 2em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  margin: 0;
+  height: 40%;
+}
+
+.info2 h3 {
+  font-size: 2em;
+}
+.info2 h4 {
+  font-size: 1em;
+}
+.info2 h5 {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+}
+.info3 h3 {
+  font-size: 2em;
+}
+.info3 h4 {
+  font-size: 1em;
+}
+.info3 h5 {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.info4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: absolute;
+  bottom: 40%;
+  left: 10px;
+  margin: 0;
+  height: 40%;
+}
+.info4 h3 {
+  font-size: 2em;
+}
+.info4 h4 {
+  font-size: 1em;
+}
+.info4 h5 {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+}
+.info5 h3 {
+  font-size: 2em;
+}
+.info5 h4 {
+  font-size: 1em;
+}
+.info5 h5 {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+}
+.fecha,
+.lugar,
+.banda {
+  margin: 0;
+}
 
 #indie_boom {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 17.4vw;
+  padding-right: 17.4vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -340,16 +464,16 @@ main {
   color: white;
   text-align: left;
   margin-top: 40px;
+  height: 60vh;
 }
 
 #indie_boom h2 {
   margin: 20px 0;
-  
 }
 
 #indie_boom h1 {
   margin: 20px 0;
-  font-size: 60px;  
+  font-size: 60px;
   font-style: italic;
   line-height: 1;
 }
@@ -364,7 +488,6 @@ main {
   position: relative;
   min-width: 200px;
   text-align: left;
-  
 }
 
 #indie_boom .item img {
@@ -373,17 +496,16 @@ main {
   margin-bottom: 10px;
 }
 
-#indie_boom .item h2, #indie_boom .item h3 {
+#indie_boom .item h2,
+#indie_boom .item h3 {
   position: absolute;
   width: 100%;
-  color: white; 
+  color: white;
   margin-left: 10px;
-  
 }
 
 #indie_boom .item h2 {
-  bottom: 40px; 
-  
+  bottom: 40px;
 }
 
 #indie_boom .item h3 {
@@ -393,20 +515,10 @@ main {
   font-weight: 300;
 }
 
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+.destacar {
+  color: #ffa500;
+  font-family: "MuseoModerno", sans-serif;
 }
-
-.destacar{
-  color: white;
-  font-family: "MuseoModerno",sans-serif;
-  font-style: normal;
-}
-
 footer {
   background: #333;
   color: white;
