@@ -68,6 +68,10 @@ header {
   font-size: 1.2em;
   color: black;
   font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffa500; /* Cambia el color al pasar el mouse */
 }
 
 main {
