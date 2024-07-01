@@ -12,11 +12,11 @@ header {
 
 .top-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(to right, #1a0457, #6e3890, #577bff);
   padding: 10px 20px;
-  height: 10vh;
+  height: 12vh;
 }
 
 .social-media a {
@@ -29,11 +29,13 @@ header {
 
 .community-button button {
   background-color: #9167f1;
+  font-size: 0.8em;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 40px;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .bottom-bar {
@@ -58,6 +60,7 @@ header {
 
 .nav-links a {
   text-decoration: none;
+  font-size: 1.2em;
   color: black;
   font-weight: bold;
 }
@@ -75,10 +78,28 @@ main {
 .main-content {
   display: grid;
   grid-template-columns: 3fr 3fr 2fr;
-  grid-template-rows: 4fr 3fr 11em;
+  grid-template-rows: 4fr 3fr 12em;
   gap: 20px;
   width: 65vw;
   height: 65vh;
+}
+
+.category {
+  display: inline-flex;
+  background-color: #ffa500;
+
+  padding: 0px;
+}
+.category2 {
+  color: black;
+  padding: 5px;
+  position: relative;
+  bottom: 3px;
+  left: 3px;
+  margin: 0;
+  border: solid white 1px;
+  font-size: 0.7em;
+  font-weight: 700;
 }
 
 .article {
@@ -134,10 +155,6 @@ main {
   left: 20px;
   max-width: 85%;
   color: white;
-}
-
-.category {
-  font-weight: bold;
 }
 
 .latest-news {
