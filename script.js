@@ -59,5 +59,5 @@ document.addEventListener("DOMContentLoaded", function () {
     carrusel.style.transform = `translateX(${offset}%)`;
   }
 
-  setInterval(showNextCard, 3000); // Cambia de tarjeta cada 3 segundos
+  setInterval(showNextCard, 3000);
 });
