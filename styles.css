@@ -3,11 +3,12 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+   font-family: "Poppins", sans-serif; 
 }
 
 header {
   width: 100%;
+  
 }
 
 .top-bar {
@@ -30,6 +31,7 @@ header {
 }
 
 .community-button button {
+  font-family: "Poppins", sans-serif;
   background-color: #9167f1;
   font-size: 0.8em;
   border: none;
@@ -41,6 +43,8 @@ header {
 }
 
 .bottom-bar {
+   font-family: "Poppins", sans-serif; 
+  font-weight: 500;
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -88,11 +92,13 @@ main {
 }
 
 .category {
+  
   display: inline-flex;
   background-color: #ffa500;
   padding: 0px;
 }
 .category2 {
+  font-family: "Poppins",sans-serif;
   color: black;
   padding: 5px;
   position: relative;
@@ -152,6 +158,8 @@ main {
 }
 
 .overlay {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
   position: absolute;
   bottom: 10px;
   left: 20px;
@@ -182,6 +190,7 @@ main {
 }
 
 .title h2 {
+  font-family: "Poppins",sans-serif;
   margin-top: 10px;
   margin-right: 10px;
   font-size: 1em;
@@ -209,6 +218,7 @@ main {
   max-height: 80%;
 }
 .titulos a {
+  font-family: "Poppins",sans-serif;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -324,3 +334,9 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
+.destacar{
+  color: #ffa500;
+  font-family: "MuseoModerno",sans-serif;
+}
+
