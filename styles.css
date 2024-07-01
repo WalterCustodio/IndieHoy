@@ -554,9 +554,52 @@ main {
   border: solid 3px #6e3890;
 }
 footer {
-  background: #333;
+  background: #040404;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+.logo-footer{
+  padding: 30px;
+  position: relative;
+  max-height: 85px;
+}
+
+.social-media-footer a {
+  margin: 0 15px;
+  
+}
+
+.futer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px ;
+  padding: 30px;
+  
+}
+
+.futer h3{
+  position: relative;
+  margin: 0%;
+  padding: 0 10px;
+
+}
+
+.futer h3:not(:last-child)::after {
+  font-weight: 200 ;
+  content: '|';
+  position: absolute;
+  right: -25px; 
+  color: white; 
+  transform: translateX(50%);
+}
+
+#derechos{
+  font-family: "Poppins" ,sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  
 }
