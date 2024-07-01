@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indie Hoy</title>
     <link rel="stylesheet" href="styles.css" />
+    
   </head>
   <body>
     <header>
       <div class="header-grid">
         <div class="banner">
           <div class="redes">fb,tw,ig,spotify</div>
-          <div class="logo">logo</div>
+          <div class="logo">logo
+            <img src="img/logo-indiehoy.png" alt="">
+          </div>
           <div class="buscador">buscador</div>
         </div>
         <nav class="secciones">
@@ -28,10 +31,19 @@
       <section id="portada">
         <div class="principales">
           <div class="side">
-            <div>noti importante 1</div>
-            <div>noti importante 2</div>
+            <div class="card">
+              <img src="img/importante1.png" alt="">
+              <h3>Julais crea fantasías queer de electropop retrofuturista</h3>
+            </div>
+            <div class="card">
+              <img src="img/importante2.png" alt="">
+              <h3>5 bandas de la nueva escena mendocina que tenés que escuchar</h3>
+            </div>
           </div>
-          <div class="noti_principal">noti importante principal</div>
+          <div class="noti_principal card">
+            <h2>Ana Curra "En el underground es donde se cuecen las verdades"</h2>
+            <img src="img/principal.png" alt="">
+          </div>
           <div class="ultimas_noticias">
             ultimas noticias
             <div>titulo 1</div>
@@ -39,39 +51,90 @@
             <div>titulo 3</div>
           </div>
         </div>
-        <div class="carrousel">
-          <div class="item">item 1</div>
-          <div class="item">item 2</div>
-          <div class="item">item 3</div>
-          <div class="item">item 4</div>
-          <div class="item">item 5</div>
+        <div class="carousel">
+          <button class="prev">❮</button>
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="item card">
+                <img src="img/item1.png" alt="">
+                <h3>Vita Set presenta su nuevo disco: Affaire</h3>
+              </div>
+              <div class="item card">
+                <img src="img/item2.png" alt="">
+                <h3>Silabarium es una bocanada virtuosa y elegante de jazz argentino</h3>
+              </div>
+              <div class="item card">
+                <img src="img/item3.png" alt="">
+                <h3>Paris is burning, el icónico documental queer de los 80 que sigue vigente</h3>
+              </div>
+              <div class="item card">
+                <img src="img/item4.png" alt="">
+                <h3>Martuca crea canciones de electropop emocional desde Neuquén</h3>
+              </div>
+              <div class="item card">
+                <img src="img/item5.png" alt="">
+                <h3>3 nuevos discos del under marplatense que tenés que escuchar</h3>
+              </div>
+              <div class="item card">
+                <img src="img/item6.png" alt="">
+                <h3>3 artistas uruguayos para tener en el radar</h3>
+              </div>
+            </div>
+          </div>
+          <button class="next">❯</button>
         </div>
       </section>
       <section id="playlist">
         emergente~
-        <div class="reproductor">spotifi</div>
+        <div class="reproductor">spotifi
+          <img src="img/cancion.png" alt="">
+        </div>
       </section>
       <section id="proximos_eventos">
         <div class="titulo">PRÓXIMOS EVENTOS</div>
         <div class="eventos">
-          <div class="evento">evento 1</div>
-          <div class="evento">evento 2</div>
-          <div class="evento">evento 3</div>
-          <div class="evento">evento 4</div>
-          <div class="evento">evento 5</div>
+          <div class="evento">evento 1
+            <img src="img/evento1.png" alt="">
+          </div>
+          <div class="evento">evento 2
+            <img src="img/evento2.png" alt="">
+          </div>
+          <div class="evento">evento 3
+            <img src="img/evento2.png" alt="">
+          </div>
+          <div class="evento">evento 4
+           
+          </div>
+          <div class="evento">evento 5
+            
+          </div>
         </div>
         <button>ver proximos eventos</button>
       </section>
       <section id="indie_boom">
         Descubrí una variedad de artistas desconocidos que merecen una
         escuchada.
-        <div class="carrousel">
-          <div class="item">item 1</div>
-          <div class="item">item 2</div>
-          <div class="item">item 3</div>
-          <div class="item">item 4</div>
-          <div class="item">item 5</div>
-          <div class="item">item 6</div>
+        <div class="carousel">
+          <div class="item">item 1
+            <img src="img/emergente1.png" alt="">
+            <h2>Plenamente</h2>
+            <h3>Shoegaze</h3>
+          </div>
+          <div class="item">item 2
+            <img src="img/emergente2.png" alt="">
+            <h2>Vicente Colombo</h2>
+            <h3>Indie Rock</h3>
+          </div>
+          <div class="item">item 3
+            <img src="img/emergente3.png" alt="">
+            <h2>Isla Mujeres</h2>
+            <h3>Indie Pop</h3>
+          </div>
+          <div class="item">item 4
+            <img src="img/emergente4.png" alt="">
+            <h2>Laika Perra Rusa</h3>
+            <h3>Electropop</h3>
+          </div>
         </div>
       </section>
     </main>
