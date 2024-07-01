@@ -1,158 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indie Hoy</title>
     <link rel="stylesheet" href="styles.css" />
-    
   </head>
   <body>
     <header>
-      <div class="header-grid">
-        <div class="banner">
-          <div class="redes">fb,tw,ig,spotify</div>
-          <div class="logo">
-            <img src="img/logo-indiehoy.png" alt="">
-          </div>
-          <div class="buscador">buscador</div>
+      <div class="top-bar">
+        <div class="social-media">
+          <a href="#"><img src="img/facebook-icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="img/twitter-icon.png" alt="Twitter" /></a>
+          <a href="#"><img src="img/instagram-icon.png" alt="Instagram" /></a>
         </div>
-        <nav class="secciones">
-          <ul>
-            <a href="#musica">MUSICA</a>
-            <a href="#agenda">AGENDA</a>
-            <a href="#cine y series">CINE Y SERIES</a>
-            <a href="#cultura">CULTURA</a>
-          </ul>
-        </nav>
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" />
+        </div>
+        <div class="community-button">
+          <button>suscribirse</button>
+        </div>
       </div>
+      <nav class="bottom-bar">
+        <ul class="nav-links">
+          <li><a href="#">Música</a></li>
+          <li><a href="#">Agenda</a></li>
+          <li><a href="#">Cine y Series</a></li>
+          <li><a href="#">Cultura</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main-grid">
-      <section id="portada">
-        <div class="principales">
-          <div class="side">
-            <div class="card">
-              <img src="img/importante1.png" alt="">
-              <h3>Julais crea fantasías queer de electropop retrofuturista</h3>
-            </div>
-            <div class="card">
-              <img src="img/importante2.png" alt="">
-              <h3>5 bandas de la nueva escena mendocina que tenés que escuchar</h3>
-            </div>
-          </div>
-          <div class="noti_principal card">
-            <h2>Ana Curra "En el underground es donde se cuecen las verdades"</h2>
-            <img src="img/principal.png" alt="">
-          </div>
-          <div class="ultimas_noticias">
-            ultimas noticias
-            <div>titulo 1</div>
-            <div>titulo 2</div>
-            <div>titulo 3</div>
+      <section class="main-content">
+        <div class="article small">
+          <img src="img/small-image1.jpg" alt="Article 1" />
+          <div class="overlay">
+            <span class="category">DESCUBRIR</span>
+            <h3>Julais crea fantasías queer de electropop retrofuturista</h3>
           </div>
         </div>
-        <div class="carousel">
-          <button class="prev">❮</button>
-          <div class="carousel-track-container">
-            <div class="carousel-track">
-              <div class="item card">
-                <img src="img/item1.png" alt="">
-                <h3>Vita Set presenta su nuevo disco: Affaire</h3>
-              </div>
-              <div class="item card">
-                <img src="img/item2.png" alt="">
-                <h3>Silabarium es una bocanada virtuosa y elegante de jazz argentino</h3>
-              </div>
-              <div class="item card">
-                <img src="img/item3.png" alt="">
-                <h3>Paris is burning, el icónico documental queer de los 80 que sigue vigente</h3>
-              </div>
-              <div class="item card">
-                <img src="img/item4.png" alt="">
-                <h3>Martuca crea canciones de electropop emocional desde Neuquén</h3>
-              </div>
-              <div class="item card">
-                <img src="img/item5.png" alt="">
-                <h3>3 nuevos discos del under marplatense que tenés que escuchar</h3>
-              </div>
-              <div class="item card">
-                <img src="img/item6.png" alt="">
-                <h3>3 artistas uruguayos para tener en el radar</h3>
-              </div>
+        <div class="article large">
+          <img src="img/large-image.jpg" alt="Main article" />
+          <div class="overlay">
+            <span class="category">ENTREVISTAS</span>
+            <h2>
+              Ana Curra: "En el underground es donde se cuecen las verdades"
+            </h2>
+          </div>
+        </div>
+        <aside class="latest-news">
+          <div class="title">
+            <h2>ÚLTIMAS <span> NOTICIAS</span></h2>
+          </div>
+          <div class="titulos">
+            <div class="noticia">
+              <img src="img/noti1.png" alt="" />
+              <a href="#">3 películas para ver en el cine este fin de semana</a>
+            </div>
+            <div class="noticia">
+              <img src="img/noti2.png" alt="" />
+              <a href="#">5 artistas británicos para conocer este mes</a>
+            </div>
+            <div class="noticia">
+              <img src="img/noti3.png" alt="" />
+              <a href="#">3 poetas de culto para leer en invierno</a>
             </div>
           </div>
-          <button class="next">❯</button>
+        </aside>
+        <div class="article small">
+          <img src="img/small-image2.jpg" alt="Article 2" />
+          <div class="overlay">
+            <span class="category">LISTAS</span>
+            <h3>
+              5 bandas de la nueva escena mendocina que tenés que escuchar
+            </h3>
+          </div>
+        </div>
+        <div class="carrusel">
+          <div class="article carrusel">
+            <img src="img/small-image3.jpg" alt="Article 3" />
+            <div class="overlay">
+              <span class="category">ENTREVISTAS</span>
+              <h3>Vita Set presenta su nuevo disco: Affaire</h3>
+            </div>
+          </div>
+          <div class="article carrusel">
+            <img src="img/small-image4.jpg" alt="Article 4" />
+            <div class="overlay">
+              <span class="category">CINE</span>
+              <h3>
+                París is Burning, el icónico documental queer de los 80 que
+                sigue vigente
+              </h3>
+            </div>
+          </div>
+          <div class="article carrusel">
+            <img src="img/small-image5.jpg" alt="Article 5" />
+            <div class="overlay">
+              <span class="category">DESCUBRIR</span>
+              <h3>
+                Siblabrium es una bocanada virtuosa y elegante de jazz argentino
+              </h3>
+            </div>
+          </div>
+          <div class="article carrusel">
+            <img src="img/small-image5.jpg" alt="Article 5" />
+            <div class="overlay">
+              <span class="category">DESCUBRIR</span>
+              <h3>
+                Siblabrium es una bocanada virtuosa y elegante de jazz argentino
+              </h3>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="playlist">
-        emergente~
-        <div class="reproductor">spotifi
-          <img src="img/cancion.png" alt="">
+      <section class="playlist">
+        <h2>PLAYLIST EMERGENTE</h2>
+        <p>Descubrí y disfrutá de nuestra selección de artistas locales.</p>
+        <div class="spotify-embed">
+          <!-- Código del embed de Spotify aquí -->
         </div>
       </section>
       <section id="proximos_eventos">
         <div class="titulo">PRÓXIMOS EVENTOS</div>
         <div class="eventos">
-          <div class="evento">evento 1
-            <img src="img/evento1.png" alt="">
+          <div class="evento">
+            <img src="img/evento1.png" alt="evento 1" />
+            <p>Evento 1</p>
           </div>
-          <div class="evento">evento 2
-            <img src="img/evento2.png" alt="">
+          <div class="evento">
+            <img src="img/evento2.png" alt="evento 2" />
+            <p>Evento 2</p>
           </div>
-          <div class="evento">evento 3
-            <img src="img/evento2.png" alt="">
+          <div class="evento">
+            <img src="img/evento2.png" alt="evento 3" />
+            <p>Evento 3</p>
           </div>
-          <div class="evento">evento 4
-           
+          <div class="evento">
+            <img src="img/evento4.png" alt="evento 4" />
+            <p>Evento 4</p>
           </div>
-          <div class="evento">evento 5
-            
+          <div class="evento">
+            <img src="img/evento5.png" alt="evento 5" />
+            <p>Evento 5</p>
           </div>
         </div>
-        <button>ver proximos eventos</button>
+        <button>Ver Próximos Eventos</button>
       </section>
       <section id="indie_boom">
-        <h2>INDIE</h2>
-        <H2>BOOM!</H2>
-        <P>Descubrí nuestra variedad semanal de artistas emergentes.</P>
+        <h2>INDIE BOOM</h2>
+        <p>
+          Descubrí una variedad de artistas desconocidos que merecen una
+          escuchada.
+        </p>
         <div class="carousel">
-          <div class="item card">
-            <img src="img/emergente1.png" alt="">
+          <div class="item">
+            <img src="img/emergente1.png" alt="item 1" />
             <h2>Plenamente</h2>
             <h3>Shoegaze</h3>
           </div>
-          <div class="item card">
-            <img src="img/emergente2.png" alt="">
+          <div class="item">
+            <img src="img/emergente2.png" alt="item 2" />
             <h2>Vicente Colombo</h2>
             <h3>Indie Rock</h3>
           </div>
-          <div class="item card">
-            <img src="img/emergente3.png" alt="">
+          <div class="item">
+            <img src="img/emergente3.png" alt="item 3" />
             <h2>Isla Mujeres</h2>
             <h3>Indie Pop</h3>
           </div>
-          <div class="item card">
-            <img src="img/emergente4.png" alt="">
-            <h2>Laika Perra Rusa</h3>
+          <div class="item">
+            <img src="img/emergente4.png" alt="item 4" />
+            <h2>Laika Perra Rusa</h2>
             <h3>Electropop</h3>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-    <div>
-      <div>
-      <img src="img/logo-indiehoy.png" alt="">
-      <img src="img/Facebook.png" alt="">
-      <img src="img/Twitter.png" alt="">
-      <img src="img/Instagram.png" alt="">
-      <img src="img/Frame.png" alt="">
-    </div>
-
-    </div>
-
-  </footer>
-
+    <footer>Footer</footer>
     <script src="script.js"></script>
   </body>
 </html>
