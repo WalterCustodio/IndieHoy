@@ -45,3 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carrusel = document.querySelector(".carrusel");
+  const articles = document.querySelectorAll(".article.carrusel");
+  let currentIndex = 0;
+  const totalCards = articles.length;
+  const cardsPerView = 3;
+
+  function showNextCard() {
+    currentIndex = (currentIndex + 1) % totalCards;
+    const offset = -currentIndex * (115 / totalCards);
+    carrusel.style.transform = `translateX(${offset}%)`;
+  }
+
+  setInterval(showNextCard, 3000); // Cambia de tarjeta cada 3 segundos
+});

@@ -137,19 +137,27 @@ main {
   height: 100%;
   width: 100%;
 }
-.carrusel {
+.carrusel-container {
   grid-column: 1 / span 3;
   grid-row: 3;
+  overflow: hidden; /* Oculta las tarjetas fuera de la vista */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carrusel {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   gap: 20px;
+  transition: transform 0.5s ease-in-out; /* Suaviza la transición de desplazamiento */
 }
+
 .article.carrusel {
-  height: 100%;
-  width: 30%;
+  flex: 0 0 30%; /* Asegura que cada tarjeta tome el 30% del ancho del carrusel */
   border-radius: 10px;
 }
+
 .article.carrusel img {
   object-position: center;
   max-width: 100%;
@@ -533,12 +541,13 @@ main {
 }
 
 .cine_y_cultura {
+  margin: 40px;
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
-  grid-template-rows: 4fr 3fr 12em;
+  grid-template-rows: 4fr 3fr;
   gap: 20px;
   width: 64vw;
-  height: 70vh;
+  height: 50vh;
 }
 .cine_y_cultura .article.large {
   grid-column: 3;
@@ -562,9 +571,48 @@ main {
   border: solid 3px #6e3890;
 }
 footer {
-  background: #333;
+  background: #040404;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+.logo-footer {
+  padding: 30px;
+  position: relative;
+  max-height: 85px;
+}
+
+.social-media-footer a {
+  margin: 0 15px;
+}
+
+.futer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+}
+
+.futer h3 {
+  position: relative;
+  margin: 0%;
+  padding: 0 10px;
+}
+
+.futer h3:not(:last-child)::after {
+  font-weight: 200;
+  content: "|";
+  position: absolute;
+  right: -25px;
+  color: white;
+  transform: translateX(50%);
+}
+
+#derechos {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
 }
