@@ -3,12 +3,11 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 header {
   width: 100%;
-  
 }
 
 .top-bar {
@@ -43,7 +42,7 @@ header {
 }
 
 .bottom-bar {
-   font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -92,13 +91,12 @@ main {
 }
 
 .category {
-  
   display: inline-flex;
   background-color: #ffa500;
   padding: 0px;
 }
 .category2 {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   padding: 5px;
   position: relative;
@@ -159,7 +157,6 @@ main {
 
 .overlay {
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
   position: absolute;
   bottom: 10px;
   left: 20px;
@@ -168,6 +165,7 @@ main {
 }
 .overlay h3 {
   font-size: 1em;
+  height: 3em;
 }
 
 .latest-news {
@@ -190,7 +188,7 @@ main {
 }
 
 .title h2 {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 10px;
   margin-right: 10px;
   font-size: 1em;
@@ -218,7 +216,7 @@ main {
   max-height: 80%;
 }
 .titulos a {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -255,46 +253,82 @@ main {
 .playlist h2 {
   margin-top: 0;
 }
+.spotify-embed iframe {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .titulos_playlist {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.titulos_playlist h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 3.5em;
+  margin: 0;
+}
+.titulos_playlist span {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.titulos_playlist p {
+  color: black;
 }
 
 #proximos_eventos {
-  padding-left: 20%;
-  padding-right: 20%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 65vh;
-  margin-top: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #8c73c3;
+  padding: 0% 2% 2% 2%;
+  margin-top: 2%;
 }
-
-#proximos_eventos .eventos {
+.titulo_eventos {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -1.9em;
+  font-size: 1em;
+  font-weight: 700;
+  border: solid 3px #6e3890;
+  padding: 0.3em 0.5em;
+}
+.eventos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  height: auto;
+  width: 60vw;
+}
+.eventos img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.grupo1 {
+  grid-column: 1;
+}
+.grupo2 {
+  grid-column: 2;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+.grupo3 {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-#proximos_eventos .evento {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#proximos_eventos .evento img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
 #indie_boom {
-  padding-left: 20%;
-  padding-right: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -327,6 +361,10 @@ main {
   margin-bottom: 10px;
 }
 
+.destacar {
+  color: #ffa500;
+  font-family: "MuseoModerno", sans-serif;
+}
 footer {
   background: #333;
   color: white;
@@ -334,9 +372,3 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
-
-.destacar{
-  color: #ffa500;
-  font-family: "MuseoModerno",sans-serif;
-}
-
