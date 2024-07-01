@@ -492,12 +492,20 @@ main {
   position: relative;
   min-width: 200px;
   text-align: left;
+  border: solid 3px rgba(0, 0, 0, 0);
+  border-radius: 20px;
 }
 
 #indie_boom .item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+
+  border-radius: 20px;
   margin-bottom: 10px;
+  object-fit: cover;
+}
+#indie_boom .item:hover {
+  border: solid 3px #ffa500;
 }
 
 #indie_boom .item h2,
@@ -554,52 +562,9 @@ main {
   border: solid 3px #6e3890;
 }
 footer {
-  background: #040404;
+  background: #333;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-}
-
-.logo-footer{
-  padding: 30px;
-  position: relative;
-  max-height: 85px;
-}
-
-.social-media-footer a {
-  margin: 0 15px;
-  
-}
-
-.futer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 50px ;
-  padding: 30px;
-  
-}
-
-.futer h3{
-  position: relative;
-  margin: 0%;
-  padding: 0 10px;
-
-}
-
-.futer h3:not(:last-child)::after {
-  font-weight: 200 ;
-  content: '|';
-  position: absolute;
-  right: -25px; 
-  color: white; 
-  transform: translateX(50%);
-}
-
-#derechos{
-  font-family: "Poppins" ,sans-serif;
-  font-weight: 400;
-  margin-top: 20px;
-  
 }
