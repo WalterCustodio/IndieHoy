@@ -9,6 +9,10 @@ header {
   background-color: #f8f9fa;
 }
 
+footer {
+  background-color: #040404;
+}
+
 .header-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,21 +22,24 @@ header {
     ". secciones .";
   height: 20vh;
 }
+
 .banner {
   display: grid;
-  grid-template-columns: 1 fr, 1 fr, 1 fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-left: 10%;
   padding-right: 10%;
   grid-row: 1;
   grid-column: 1 / span 3;
   background: linear-gradient(to right, #1a0457, #6e3890, #577bff);
 }
+
 .redes {
   grid-row: 1;
   grid-column: 1;
   display: flex;
   justify-content: center;
 }
+
 .logo {
   grid-row: 1;
   grid-column: 2;
@@ -40,26 +47,31 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .buscador {
   grid-row: 1;
   grid-column: 3;
   display: flex;
   justify-content: center;
 }
+
 .secciones {
   grid-area: secciones;
 }
+
 .secciones ul {
   display: flex;
   justify-content: center;
   justify-content: space-around;
 }
+
 .main-grid {
   display: grid;
   grid-template-rows: repeat(5, auto);
   height: 235vh;
   width: 100%;
 }
+
 #portada {
   padding-left: 20%;
   padding-right: 20%;
@@ -70,6 +82,7 @@ header {
   height: 75vh;
   width: 60%;
 }
+
 .principales {
   display: flex;
   flex-direction: row;
@@ -79,20 +92,24 @@ header {
   width: 100%;
   gap: 14px;
 }
+
 .side {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
+
 .noti_principal {
   display: flex;
   width: 40%;
 }
+
 .ultimas_noticias {
   display: flex;
   flex-direction: column;
   width: 20%;
 }
+
 .carousel {
   display: flex;
   align-items: center;
@@ -101,19 +118,23 @@ header {
   width: 100%;
   overflow: hidden;
 }
+
 .carousel-track-container {
   overflow: hidden;
   width: 100%;
 }
+
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
 .item {
-  min-width: calc(100% / 4);
+  min-width: calc(100% / 4 - 20px);
   box-sizing: border-box;
   margin: 0 10px;
 }
+
 .prev,
 .next {
   background-color: #fff;
@@ -124,12 +145,15 @@ header {
   cursor: pointer;
   z-index: 1;
 }
+
 .prev {
   left: 0;
 }
+
 .next {
   right: 0;
 }
+
 #playlist {
   padding-left: 20%;
   padding-right: 20%;
@@ -139,6 +163,7 @@ header {
   height: 45vh;
   background-color: #577bff;
 }
+
 #proximos_eventos {
   padding-left: 20%;
   padding-right: 20%;
@@ -148,6 +173,7 @@ header {
   align-items: center;
   height: 70vh;
 }
+
 #indie_boom {
   padding-left: 20%;
   padding-right: 20%;
@@ -156,14 +182,36 @@ header {
   flex-direction: column;
   height: 45vh;
   background-color: #1a0457;
+  color: white;
 }
+
+#indie_boom .carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+#indie_boom .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#indie_boom .item {
+  min-width: calc(100% / 4 - 20px);
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
 .card {
   position: relative;
+  overflow: hidden;
 }
+
 .card img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
+
 .card h2,
 .card h3 {
   position: absolute;
@@ -172,5 +220,9 @@ header {
   color: #fff;
   margin: 0;
   padding: 5px;
+  
+}
 
+.card h2 {
+  bottom: 35px;
 }
