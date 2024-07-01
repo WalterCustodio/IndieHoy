@@ -27,17 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".evento-img");
+  const grupos = document.querySelectorAll(
+    ".grupo1, .evento2, .evento3, .evento4, .evento5"
+  );
 
-  images.forEach((img) => {
-    const hoverSrc = img.getAttribute("data-hover");
-    const originalSrc = img.getAttribute("data-original");
+  grupos.forEach((grupo) => {
+    const img = grupo.querySelector("img");
+    const hoverSrc = grupo.getAttribute("data-hover-img");
+    const originalSrc = grupo.getAttribute("data-original-img");
 
-    img.addEventListener("mouseover", () => {
+    grupo.addEventListener("mouseover", () => {
       img.src = hoverSrc;
     });
 
-    img.addEventListener("mouseout", () => {
+    grupo.addEventListener("mouseout", () => {
       img.src = originalSrc;
     });
   });
