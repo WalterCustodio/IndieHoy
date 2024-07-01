@@ -93,13 +93,42 @@ header {
   flex-direction: column;
   width: 20%;
 }
-.carrousel {
+.carousel {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  height: 30%;
+  justify-content: center;
+  position: relative;
   width: 100%;
+  overflow: hidden;
+}
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.item {
+  min-width: calc(100% / 4);
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+.prev,
+.next {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
 }
 #playlist {
   padding-left: 20%;
@@ -127,4 +156,21 @@ header {
   flex-direction: column;
   height: 45vh;
   background-color: #1a0457;
+}
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h2,
+.card h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+
 }
